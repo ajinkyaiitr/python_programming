@@ -1,0 +1,67 @@
+# #Write a program to find the average of student heights
+
+student_heights = input("Input a list of student heights in cm ").split()
+print(student_heights)
+for n in range(0 , len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+total_height = 0
+for height in student_heights:
+  total_height += height
+print(f"The total height is {total_height}")
+number_of_students = 0
+for student in student_heights:
+  number_of_students += 1
+print(f"Total number of students : {number_of_students}")
+
+average_height = round(total_height/number_of_students)
+print(average_height)
+
+
+###Write a program to find the highest of student scores
+
+# ##Python Loops
+# #Write a program to generate a strong password
+# print("Welcome to the PyPassword Generator!")
+# # letters = int(input("How many letters would you like in your password?"))
+# # symbols = int(input("How many symbols would you like in your password?"))
+# # numbers = int(input("How many numbers would you like?"))
+
+# #Types of Loops
+# #1.for Loop
+
+# # fruits = ["Apple","Mango","Banana"]
+# # for fruit in fruits:
+# #   print(fruit)
+# #   print(fruit + "Pie")
+  
+# #Write a program to find the average of student heights
+
+# student_heights = input("Input a list of student heights in cm ").split()
+# print(student_heights)
+# for n in range(0 , len(student_heights)):
+#   student_heights[n] = int(student_heights[n])
+
+# total_height = 0
+# for height in student_heights:
+#   total_height += height
+# print(f"The total height is {total_height}")
+# number_of_students = 0
+# for student in student_heights:
+#   number_of_students += 1
+# print(f"Total number of students : {number_of_students}")
+
+# average_height = round(total_height/number_of_students)
+# print(average_height)
+
+# #Write a program to find the highest student marks
+
+student_marks = input("Input a list of student marks ").split()
+print(student_marks)
+for n in range(0 , len(student_marks)):
+  student_marks[n] = int(student_marks[n])
+
+
+
+print(f"The highest score in the class is {highest_score}")
+  

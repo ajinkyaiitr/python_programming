@@ -1,0 +1,249 @@
+
+
+Write a program to check whether you can ride the rollercoaster or not ?
+
+print("Welcome to the roller-coaster ride!!")
+height = int(input("Please enter your height in cm"))
+
+if(height > 18):
+  print("You can ride the rollercoaster")
+else:
+  print("You cant ride the rollercoaster")
+
+==================================================================================================
+Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height.
+Instructions
+It should tell them the interpretation of their BMI based on the BMI value.
+
+    Under 18.5 they are underweight
+    Over 18.5 but below 25 they have a normal weight
+    Over 25 but below 30 they are slightly overweight
+    Over 30 but below 35 they are obese
+    Above 35 they are clinically obese
+	
+	
+	
+code:
+	height = float(input("Enter your height in meters:"))
+weight = float(input("Enter your weight in kg:"))
+bmi = round(weight / height ** 2)
+print("Your BMI value is",+bmi)
+if(bmi < 18.5):
+  print(f"Your BMI is {bmi},You are underweight")
+elif(bmi < 25):
+  print(f"Your BMI is {bmi},You have normal weight")
+elif(bmi < 30):
+  print(f"Your BMI is {bmi},You are overweight")
+elif(bmi < 35):
+  print(f"Your BMI is {bmi},You are obese")
+else:
+  print("You are clinically obese")
+        
+=============================================================================================================
+
+Write a program that works out whether if a given year is a leap year. A normal year has 365 days, leap years have 366, with an extra day in February. The reason why we have leap years is really fascinating, this video does it more justice:
+
+Leap Year:
+on every year that is evenly divisible by 4 ,except every year that is evenly divisible by 100 ; unless the year is also evenly divisible by 400
+
+Instructions:
+
+https://www.youtube.com/watch?v=xX96xng7sAE
+
+This is how you work out whether if a particular year is a leap year.
+
+    on every year that is evenly divisible by 4 
+
+    **except** every year that is evenly divisible by 100 
+
+    **unless** the year is also evenly divisible by 400
+    
+Code:
+
+year = int(input("Which year do you want to check"))
+if(year % 4 == 0):
+  if(year % 100 == 0):
+    if(year % 400 == 0):
+     print(f"The {year} is a leap year")
+    else:
+     print("Not a Leap Year.")
+  else:
+    print("Leap year")
+else:
+  print("Not a leap year")
+
+
+ ============================================================================== 
+WAP for roller coaster ride. If your height is greater than 120cm ,you can ride. Further if age is less than 12 ,ticket price are charged $5 
+if age is less than or equal to 18, ticket prices are charges $7 , else ticket price are $12
+
+height = int(input("Please enter your height in cm: "))
+if (height > 120):
+  print("You can ride the roller coaster ride")
+  age = int(input("Please enter your age in years"))
+  if(age < 12):
+    print(f"The child ticket charges for age {age} is $5")
+  elif(age <= 18):
+    print(f"The youth ticket charges for age {age} is $7")
+  else:
+    print(f"The  adult ticket price for age {age} is $12")
+else:
+  print("You can't ride the roller coaster ride")
+  
+  OUTPUT:
+  
+  Please enter your height in cm: 190
+You can ride the roller coaster ride
+Please enter your age in years29
+The  adult ticket price for age 29 is $12
+ 
+
+  ==============================================================================
+  
+Statement:
+ 
+ Congratulations, you've got a job at Python Pizza. Your first job is to build an automatic pizza order program.
+
+Based on a user's order, work out their final bill.
+
+Small Pizza: $15
+
+Medium Pizza: $20
+
+Large Pizza: $25
+
+Pepperoni for Small Pizza: +$2
+
+Pepperoni for Medium or Large Pizza: +$3
+
+Extra cheese for any size pizza: + $1
+
+CODE:
+
+ print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S , M or L ")
+add_pepperoni = input("Do you want to add Pepperoni? Y or N ")
+extra_cheese = input("Do you want to add extra cheese?Y or N ")
+
+bill = 0
+
+if(size == "S"):
+  bill += 15
+if(size == "M"):
+  bill+= 20
+if(size == "L"):
+  bill += 25
+
+if add_pepperoni == "Y":
+  if size == "S":
+    bill += 2
+  else:
+    bill+= 3
+if extra_cheese == "Y":
+  bill += 1
+
+print(f"Your final bill is ${bill}")
+
+OUTPUT:
+
+Welcome to Python Pizza Deliveries!
+What size pizza do you want? S , M or L L
+Do you want to add Pepperoni? Y or N Y
+Do you want to add extra cheese?Y or N Y
+Your final bill is $29
+ 
+====================================================================
+    
+  Logical Operators:
+
+A and B
+C or D
+not E
+
+=================================================================
+Write a program for Love Calculator
+
+=================================================================
+  Instructions
+
+You are going to write a program that tests the compatibility between two people.
+
+To work out the love score between two people:
+
+    Take both people's names and check for the number of times the letters in the word TRUE occurs. 
+
+    Then check for the number of times the letters in the word LOVE occurs. 
+
+    Then combine these numbers to make a 2 digit number.
+
+For Love Scores less than 10 or greater than 90, the message should be:
+
+"Your score is **x**, you go together like coke and mentos."
+
+For Love Scores between 40 and 50, the message should be:
+
+"Your score is **y**, you are alright together."
+
+Otherwise, the message will just be their score. e.g.:
+
+"Your score is **z**."
+
+CODE:
+
+print("Welcome to the Love Calculator!!!")
+name1 = input("What is your name?")
+name2 = input("What is your lover's name?")
+
+combined_string = name1 + name2
+lower_string1 = combined_string.lower()
+t = lower_string1.count("t")
+r = lower_string1.count("r")
+u = lower_string1.count("u")
+e = lower_string1.count("e")
+
+true = t + r + u + e
+ 
+l = lower_string1.count("l")
+o = lower_string1.count("o")
+v = lower_string1.count("v")
+e = lower_string1.count("e")
+love = l + o + v + e
+
+love_score = str(true) + str(love)
+love_score_int = int(love_score)
+print(love_score)
+
+if(love_score_int < 10) or (love_score_int > 90):
+  print(f"Your score is {love_score_int} , you go together like coke and mentos")
+elif(love_score_int >=40) and (love_score_int <= 50):
+  print(f"Your score is {love_score_int} , you are alright together")
+else:
+  print(f"Your score is {love_score_int}")
+  
+  
+  
+  
+  CODE:
+  
+  print("Welcome to Treasure Island!!")
+print("Your mission is to find the Treasure")
+print("You're at the crossroad. Where do you want to go? Type 'left' or 'right' ")
+
+direction = input("Where do you wanna go ? , left or right")
+if(direction == "left"):
+  part_2 = input("Do you want to swim or wait?")
+  if(part_2 == "swim"):
+    print("Game Over")
+  else:
+    door = input("Which door you want? , red,blue or yellow")
+    if door == "red":
+      print("Game Over")
+    if door == "yellow":
+      print("You Win")
+    else:
+      print("Game Over")
+else:
+  print("Game Over")
+
+
+
