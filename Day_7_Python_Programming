@@ -1,0 +1,96 @@
+#Lists in Python
+
+1.List are not immutable
+
+->Add the element "motorcycle" to the following list of means of transportation:
+
+transportation_means = ["plane", "car", "ship", "bicycle","motorcycle"]
+
+->Use the pop() method to remove the third item from the following list called fruits, and store it in a variable called deleted_item
+fruits = ["apple", "banana", "mango", "cherry", "watermelon"]
+deleted_item = fruits.pop(2)
+
+
+#Dictionaries in Python
+
+my_dict = {'c1':'value1' 'c2':'value2' 'c3':'value3'}
+
+#Dictionaries do not have a specific order
+#We cannot sort with a reverse or sort method
+
+#How to print e
+dic = {'k1': ['a','b','c'], 'k2':['d','e','f']}
+
+print(dic['k2'][1].upper())
+
+
+#List
+
+# my_list = ['a','b','c']
+# print(type(my_list))
+
+# another_list = ["Hello",55,66,9.4]
+# print(type(another_list))
+# print(my_list + another_list)
+# my_list.append('belpha')
+# my_list.pop()
+# print(my_list)
+
+
+# list1 = ['g','o','b','m','c']
+# list1.sort()
+# print(list1)
+#new_list
+#list1.sort()
+#print(new_list)
+
+# fruits = ["apple", "banana", "mango", "cherry", "watermelon"]
+# deleted_item = fruits.pop(2)
+
+# my_dictionary = {'c1':'value1' , 'c2':'value2' , 'c2':'error'}
+# print(type(my_dictionary))
+# print(my_dictionary)
+# result = my_dictionary['c2']
+# print(result)
+
+# customer = {'name':'John','last_name':'Lennon','weight':88, 'height':1.76}
+# query = customer['height']
+# print(query)
+
+
+# dic = {1:55 , 2:[10,20,30],3:{'s1':100, 's2':200}}
+# print(dic[3]['s1'])
+
+#dic = {'k1': ['a','b','c'], 'k2':['d','e','f']}
+
+#How to print letter E in capital letters
+#print(dic['k2'][1].upper())
+
+
+#How to add items to already created dictionary
+
+dict_1 = {'a':1 , 'b':2}
+print(dict_1)
+
+#How to add elements to dictionary 
+
+dict_1['c'] = 3
+
+print(dict_1)
+
+We can overwrite in Dictionary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
