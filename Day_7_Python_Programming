@@ -79,6 +79,31 @@ dict_1['c'] = 3
 print(dict_1)
 
 We can overwrite in Dictionary
+===============================
+Create a dictionary called my_dict that stores the following information about a person:
+
+name: Karen
+
+surname: Jurgens
+
+age: 35
+
+occupation: Journalist
+
+The names of the keys and values must be equal to the ones indicated above.
+#name: Karen
+#surname: Jurgens
+#age: 35
+#occupation: Journalist
+
+Solution:
+my_dict = {'name':"Karen", 'surname':"Jurgens", 'age':35 , 'occupation':"Journalist"}
+
+
+# print(dict_1.keys())
+
+my_dict = {"values_1":{"v1":3,"v2":6},"points":{"points1":9,"points2":[10,300,15]}}
+print(my_dict['points']['points2'][2]) #Use dictionary indices to extract the second item of points2
 
 
 
